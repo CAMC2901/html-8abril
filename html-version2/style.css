@@ -1,0 +1,420 @@
+body {
+    background-image: url(https://wallpapers.com/images/hd/hd-map-of-game-of-thrones-tepsvby0eo1blhog.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── HEADER ── */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    width: 200px;
+    filter: drop-shadow(0 0 6px gold) drop-shadow(0 0 8px orange);
+}
+
+/* ── NAV ── */
+.nav-bar {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+.nav-bar a:hover {
+    color: gold;
+}
+
+/* ── CONTENEDOR TARJETAS ── */
+main.contenedor {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 40px 20px;
+}
+
+/* ── TARJETA ── */
+.tarjeta {
+    width: 200px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    border: 2px solid gold;
+}
+
+.tarjeta h1 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    letter-spacing: 2px;
+}
+
+/* ── TARJETA HEADER ── */
+.tarjeta-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ── FOTOS ── */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.foto-casa {
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* ── TARJETA CUERPO ── */
+.tarjeta-cuerpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1rem;
+    color: #ccc;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tarjeta-cuerpo p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* ── BOTÓN ── */
+.tarjeta-pie {
+    margin-top: 1.2rem;
+}
+
+.btn-biografia {
+    background-color: white;
+    color: #444;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    width: 100%;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-biografia:hover {
+    transform: scale(1.05);
+    background-color: gold;
+    color: black;
+}
+
+/* ── FOOTER ── */
+footer {
+    
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 16px;
+    margin: 0;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+/* ══════════════════════════════════════
+   PERSONAJES.CSS
+   ══════════════════════════════════════ */
+
+/* ── LAYOUT GENERAL ── */
+.personajes-layout {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+    width: 200px;
+    min-width: 200px;
+    background-color: rgba(0, 0, 0, 0.80);
+    border-right: 1px solid rgba(218, 165, 32, 0.3);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar-titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: gold;
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.3);
+    width: 80%;
+    text-align: center;
+}
+
+.sidebar-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-lista li {
+    width: 100%;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    transition: background 0.2s ease, color 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(218, 165, 32, 0.1);
+    color: gold;
+    border-left: 3px solid gold;
+}
+
+.sidebar-link.activo-link {
+    background-color: rgba(218, 165, 32, 0.15);
+    color: gold;
+    border-left: 3px solid gold;
+}
+
+.sidebar-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+}
+
+/* ── CONTENIDO PRINCIPAL ── */
+.personajes-contenido {
+    flex: 1;
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* ── SECCIÓN DE CADA PERSONAJE ── */
+.personaje-seccion {
+    scroll-margin-top: 20px;
+}
+
+.personaje-card {
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.70);
+    border: 1px solid rgba(218, 165, 32, 0.25);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: border 0.3s ease;
+}
+
+.personaje-card:hover {
+    border: 1px solid rgba(218, 165, 32, 0.7);
+}
+
+/* ── foto  ── */
+.personaje-card-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    min-width: 160px;
+}
+
+.personaje-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(218, 165, 32, 0.5);
+}
+
+.personaje-escudo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* ── info ── */
+.personaje-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.personaje-nombre {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: gold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.personaje-casa {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.personaje-alias {
+    font-size: 13px;
+    color: rgba(218, 165, 32, 0.7);
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
+}
+
+/* ── DATOS ── */
+.personaje-datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0.3rem 0;
+}
+
+.dato {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dato-label {
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dato-valor {
+    font-size: 13px;
+    color: #e0e0e0;
+}
+
+/* ── BIOGRAFÍA ── */
+.personaje-bio {
+    font-size: 14px;
+    color: #c0c0c0;
+    line-height: 1.7;
+    margin: 0.3rem 0 0.8rem 0;
+}
+
+/* ── BOTÓN BIOGRAFÍA ── */
+.personaje-btn {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: transparent;
+    color: gold;
+    border: 1px solid rgba(218, 165, 32, 0.5);
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.personaje-btn:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* ── LINK ACTIVO EN NAV ── */
+.nav-bar a.activo {
+    color: gold;
+    border-bottom: 1px solid gold;
+    padding-bottom: 2px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 700px) {
+    .sidebar {
+        width: 70px;
+        min-width: 70px;
+    }
+
+    .sidebar-titulo,
+    .sidebar-link span {
+        display: none;
+    }
+
+    .sidebar-link {
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .personajes-contenido {
+        padding: 1.5rem 1rem;
+    }
+
+    .personaje-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personaje-card-izquierda {
+        flex-direction: row;
+        min-width: unset;
+    }
+}
