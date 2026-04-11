@@ -1,4 +1,4 @@
-body {
+﻿body {
     background-image: url(https://wallpapers.com/images/hd/hd-map-of-game-of-thrones-tepsvby0eo1blhog.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,6 +44,14 @@ header {
 }
 
 /* ── CONTENEDOR TARJETAS ── */
+.carrusel{
+    display: flex;
+    gap: 10px;
+    width: 830px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;      
+}
 main.contenedor {
     flex: 1;
     display: flex;
@@ -52,6 +60,7 @@ main.contenedor {
     align-items: flex-start;
     gap: 24px;
     padding: 40px 20px;
+
 }
 
 /* ── TARJETA ── */
