@@ -1,5 +1,5 @@
-﻿body {
-    background-image: url(https://wallpapers.com/images/hd/hd-map-of-game-of-thrones-tepsvby0eo1blhog.webp);
+body {
+    background-image: url(https://wallpapers.com/images/hd/hd-map-of-game-of-thrones-tepsvby0eo1blhog.we);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -49,8 +49,7 @@ header {
     gap: 10px;
     width: 830px;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;      
+      
 }
 main.contenedor {
     flex: 1;
